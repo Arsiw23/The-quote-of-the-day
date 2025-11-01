@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote of the Day</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+  <div class="comets" id="comets"></div>
+  <div class="datetime-display" id="dateTimeDisplay">
+    <div class="date" id="date"></div>
+    <div class="time" id="time"></div>
+  </div>
+  
+  <button id="resetBtn" class="reset-btn">Reset</button>
+  
+  <div class="container">
+    <h1 class="title" id="title"></h1>
+    
+    <div class="quote-box" id="quoteBox">
+      <button id="newQuoteBtn" class="new-quote-btn">New Quote</button>
+      <div id="quoteContent" class="quote-content hidden">
+        <p id="quoteText" class="quote-text"></p>
+        <p id="quoteAuthor" class="quote-author"></p>
+      </div>
+    </div>
+    
+    <button id="regenerateBtn" class="regenerate-btn hidden">New Quote</button>
+  </div>
+
+  <div class="sound-controls-container">
+    <div class="sound-control">
+      <label for="styleSlider">Sound Style</label>
+      <input type="range" id="styleSlider" min="0" max="4" value="2" step="1">
+      <span class="sound-label" id="styleLabel">Star Wars</span>
+    </div>
+    
+    <div class="sound-control">
+      <label for="hzSlider">Frequency (Hz)</label>
+      <input type="range" id="hzSlider" min="0" max="100" value="50" step="1">
+      <span class="sound-label" id="hzLabel">Medium</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
